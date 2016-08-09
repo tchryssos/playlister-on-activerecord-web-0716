@@ -10,9 +10,13 @@ namespace :db do
     migrate_db
   end
 
-  task :drop => :environment do 
+  task :drop => :environment do
     drop_db
   end
+
+  # task :create_migration => :environment do
+  #   create_db
+  # end
 end
 
 task :console => :environment do
